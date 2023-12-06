@@ -14,4 +14,18 @@ h1 {
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --header-color: #ffc2e6;
+  --header-shadow-color: #ff8dcb;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --accent-text: #353430;
+  --content-heading-color: #353430;
+  --button-text-color: #353430;
+  --button-border-color: #353430;
+
+  --hover-color: #32312d66;
+  --corner-color: #353430;
+  --page-background-color: #ffeef6;
+
+  --background: url(../images/cover-image-light.png);
 }
