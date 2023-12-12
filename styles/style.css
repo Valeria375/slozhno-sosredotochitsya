@@ -1,15 +1,41 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.page {
+  background-attachment: fixed;
+  background: var(--background);
+  font-family: 'IBM Plex mono', monospace;
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+.header__theme-menu-button {
+  text-align: center;
+  font-size: 18px;
+  padding: 3px 13px;
+  font-family: var(--font-family);
+  border: 1px solid transparent;
+  background-color: transparent;
+  line-height: 100%;
+  color: var(--button-text);
+  cursor: pointer;
+  text-transform: lowercase;
+}
+.header__theme-menu-button_active {
+  border-color: var(--button-border-color);
+
+  pointer-events: none;
+}
 h1 {
   /* color: #FFC2E6; */
   /* text-shadow: 4px 4px 0px #FF0070; */
-  color: var(--header-color);
   font-family: IBM Plex Mono;
-  font-size: 157px;
+  font-size: clamp(7.25rem, 10.8974rem + -15.5624vw, 0.9375rem);
   font-style: normal;
   font-weight: 700;
   /* margin-top: ; */
-  line-height: 82.5%; /* 129.525px */
-  text-shadow: var(--header-shadow-color);
+}
+.text_decoration {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--header-color);
+  line-height: 82.5%; 
+
 }
 .header__text {
   /* color: #353430; */
@@ -18,17 +44,22 @@ h1 {
   justify-self: end;
   width: 50%;
   font-family: IBM Plex Mono;
+  /* margin-block-start: 40px; */
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: var(--accent-color);
+  color: var(--accent-text);
 }
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
   list-style: none;
   gap: 36px;
+}
+.section_title {
+  color: var(--text-color);
+  
 }
 .section-1 {
   display: grid;
@@ -44,9 +75,9 @@ h1 {
 .section-1__column {
   display: grid;
 }
-header {
+/* header {
   background: url(/images/cover-image-light.png);
-}
+} */
 .section-2_card-list {
   list-style: none;
   /* display: flex; */
@@ -94,7 +125,7 @@ h3 {
   font-weight: 700;
   line-height: 129.525px;
 }
-.image {
+.images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -102,12 +133,12 @@ h3 {
 }
 .images img {
   object-fit: cover;
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 .image_1 {
-  grid-row: 1/3;
-  grid-column: 1/4;
+  grid-row: 1/2;
+  grid-column: 1/3;
   /* background-color: aqua; */
 }
 .image_2 {
@@ -126,7 +157,4 @@ h3 {
   grid-row: 3/4;
   grid-column: 2/4;
 }
-.page {
-  background-attachment: fixed;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-}
+
