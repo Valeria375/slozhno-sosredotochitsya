@@ -2,10 +2,23 @@
 .page {
   background-attachment: fixed;
   background: var(--background);
+  background-color: var(--page-background-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "IBM Plex mono", monospace;
   font-size: 18px;
-  font-weight: 700;
+  line-height: 130%;
+  color: var(--text-color);
+  /* font-weight: 700; */
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+.header {
+  grid-template-rows: min-content;
+  margin-block-end: var(--margin-block);
+}
+.header__theme-menu {
+  /* background-color: aqua; */
 }
 .header__theme-menu-button {
   text-align: center;
@@ -23,35 +36,70 @@
   border-color: var(--button-border-color);
   pointer-events: none;
 }
-.header {
-  grid-template-rows: min-content;
-  margin-block-end: var(--margin-block);
-}
+
 
 h1 {
   /* color: #FFC2E6; */
   /* text-shadow: 4px 4px 0px #FF0070; */
   /* font-family: IBM Plex Mono; */
-  font-size: clamp(7.25rem, 10.8974rem + -15.5624vw, 0.9375rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
+  color: var(--header-color);
+  line-height: 82.5%;
   /* margin-top: ; */
 }
-.text_decoration {
+/* .text_decoration {
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--header-color);
   line-height: 82.5%;
+} */
+
+.decorated-zone {
+  display: grid;
+  padding: var(--padding);
+  inline-size: 100%;
+  min-block-size: 100vh;
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  position: absolute;
+}
+
+.decorated-zone::before {
+  inset-block-start: var(--padding);
+  inset-inline-end: var(--padding);
+  border-block-start: 1px solid var(--text-color);
+  border-inline-end: 1px solid var(--text-color);
+}
+
+.decorated-zone::after {
+  inset-block-end: var(--padding);
+  inset-inline-start: var(--padding);
+  border-block-end: 1px solid var(--text-color);
+  border-inline-start: 1px solid var(--text-color);
+}
+.header_1 {
+  justify-self: flex-start;
+  align-self: flex-start;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 .header__text {
   /* color: #353430; */
-  margin-left: 50%;
+  /* margin-left: 50%; */
   /* background-color: aqua; */
-  justify-self: end;
-  width: 50%;
-  font-family: IBM Plex Mono;
+  justify-self: flex-end;
+  /* width: 50%; */
+  /* font-family: IBM Plex Mono; */
   /* margin-block-start: 40px; */
   font-size: 18px;
-  background-color: var(--accent-color);
+  max-inline-size: 355px;
+  /* background-color: var(--accent-color); */
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
@@ -62,8 +110,21 @@ h1 {
   justify-content: center;
   list-style: none;
   gap: 10px;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
+.header__decoration {
+  color: var(--accent-text);
+  background-color: var(--accent-color);
+}
+
+
+.block {
+  padding-inline: var(--padding);
+}
+.block:not(:last-child) {
+  margin-block-end: var(--content-margin);
+}
+
 .section_title {
   color: var(--text-color);
   /* font-family: IBM Plex Mono; */

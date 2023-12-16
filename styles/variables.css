@@ -11,13 +11,9 @@
   /* --font-family: IBM Plex Mono; */
   --hover-color: #32312d66;
   --page-background-color: #ffeef6;
-  --corner-color: #353430;
-
+  --padding: 10px;
   --margin-block: 40px;
   --content-margin: 50px;
-
-  --padding: 10px;
-
   --background: url(../images/cover-image-light.png);
 }
 
