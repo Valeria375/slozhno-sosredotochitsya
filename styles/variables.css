@@ -4,11 +4,9 @@
 */
 :root {
   --header-color: #ffc2e6;
-  /* --header-shadow-color: #ff8dcb; */
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --button-border-color: #353430;
-  /* --font-family: IBM Plex Mono; */
   --hover-color: #32312d66;
   --page-background-color: #ffeef6;
   --padding: 10px;
