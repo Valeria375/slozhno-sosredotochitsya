@@ -4,27 +4,28 @@
 */
 :root {
   --header-color: #ffc2e6;
+  --shadow-color: #ff0070;
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --button-border-color: #353430;
   --hover-color: #32312d66;
   --page-background-color: #ffeef6;
-  --padding: 10px;
-  --margin-block: 40px;
-  --content-margin: 50px;
+  --padding: 20px;
+  --margin-block: 60px;
+  --content-margin: 80px;
   --background: url(../images/cover-image-light.png);
 }
 
-@media(width >= 768px) {
+@media(width < 768px) {
   :root {
-    --header-and-footer-margin: 60px;
-    --content-margin: 80px;
-    --padding: 20px;
+    --margin-block: 40px;
+    --content-margin: 50px;
+    --padding: 10px;
+  --accent-color: #ff8dcb;
   }
 }
 
 @media(width >= 1024px) {
   :root {
-    --header-shadow-color: #ff0070;
   }
 }
