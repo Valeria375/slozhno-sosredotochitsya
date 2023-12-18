@@ -16,16 +16,16 @@
   --background: url(../images/cover-image-light.png);
 }
 
-@media(width < 768px) {
+@media (width < 768px) {
   :root {
     --margin-block: 40px;
     --content-margin: 50px;
     --padding: 10px;
-  --accent-color: #ff8dcb;
+    --accent-color: #ff8dcb;
   }
 }
 
-@media(width >= 1024px) {
+@media (width >= 1024px) {
   :root {
   }
 }

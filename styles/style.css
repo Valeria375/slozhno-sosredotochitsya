@@ -85,6 +85,7 @@
   justify-self: flex-start;
   align-self: flex-start;
   text-shadow: 4px 4px 0 var(--shadow-color);
+  margin-inline-start: calc(var(--padding) * -1);
 }
 .header__text {
   /* color: #353430; */
@@ -103,10 +104,14 @@
   /* line-height: 130%; */
   /* color: var(--accent-text); */
 }
+.header__theme-menu {
+  align-self: flex-start;
+  justify-self: center;
+}
 .header__theme-menu-list {
   display: flex;
-  justify-content: center;
-  list-style: none;
+  /* justify-content: center; */
+  /* list-style: none; */
   gap: 10px;
   flex-direction: row;
   /* flex-direction: column; */
@@ -154,7 +159,7 @@
 .section_header {
   /* display: flex; */
   /* flex-wrap: wrap; */
- font-size: inherit;
+  font-size: inherit;
   color: var(--text-color);
   /* font-weight: inherit; */
   /* font-family: inherit; */
@@ -192,7 +197,7 @@
   block-size: 100%;
   inline-size: 100%;
 }
-.image_width{
+.image_width {
   grid-column: span 2;
 }
 .image_length {
@@ -217,7 +222,7 @@
 .footer {
   align-content: center;
   justify-content: center;
-  margin-block-start: var(--margin-block);
+  /* margin-block-start: var(--margin-block); */
 }
 .images {
   display: grid;
@@ -263,13 +268,61 @@
   background-color: currentColor;
   border-radius: 50%;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .column {
     grid-template-columns: fit-content(236px) 1fr;
   }
 }
+@media (width <1024px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+  .header__theme-menu {
+    align-self: center;
+    justify-self: flex-end;
+  }
+  .header__text {
+    max-inline-size: 50%;
+  }
+  .section-2,
+  .section_header {
+    inline-size: 236px;
+  }
+  .column {
+    grid-template-columns: fit-content(236px) 1fr;
+  }
+  .section-2,
+  .section-2_list {
+    grid-template-columns: none;
+  }
+}
 @media (width < 768px) {
+  .header_1 {
+    margin-inline-start: var(--padding);
+  }
   .text_decoration {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+  .header__text {
+    max-inline-size: 355px;
+  }
+  /* .conteiner {
+  grid-template-columns: none;
+} */
+  .column {
+    grid-template-columns: none;
+  }
+  .images {
+    grid-template-columns: none;
+  }
+  .section-2,
+  .section_header {
+    inline-size: 355px;
+  }
+  .image_width {
+    grid-column: auto;
+  }
+  .image_length {
+    grid-row: auto;
   }
 }
