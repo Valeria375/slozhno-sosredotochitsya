@@ -1,10 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  background-attachment: fixed;
   background: var(--background);
   background-color: var(--page-background-color);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: "IBM Plex mono", monospace;
   font-size: 18px;
@@ -40,7 +40,6 @@
   /* text-shadow: 4px 4px 0px #FF0070; */
   /* font-family: IBM Plex Mono; */
   /* font-style: normal; */
-  font-size: 157px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   color: var(--header-color);
@@ -141,9 +140,7 @@
   display: grid;
   gap: 20px;
 }
-.section__list {
-  list-style: none;
-}
+
 .section-title {
   color: var(--text-color);
   /* font-family: IBM Plex Mono; */
