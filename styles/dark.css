@@ -13,7 +13,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --header-color: #db00ff;
-  --header-shadow-color: #ff0070;
+  --shadow-color: #ff0070;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --accent-text: #000028;
@@ -21,8 +21,10 @@
   --button-text-color: #ff0070;
   --button-border-color: #ff0070;
   --hover-color: #ff007066;
-  --page-background-color: #000028;
-  --corner-color: #ff0070;
+  --background-color: #000028;
 
   --background: url(../images/cover-image-dark.png);
+}
+.page.theme_dark .decorated-text {
+  display: flex;
 }
