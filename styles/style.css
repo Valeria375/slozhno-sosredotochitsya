@@ -151,7 +151,7 @@
   /* display: flex; */
   /* flex-wrap: wrap; */
   font-size: inherit;
-  /* inline-size: 315px; */
+  inline-size: 315px;
   color: var(--section-color-text);
   /* font-weight: inherit; */
   /* font-family: inherit; */
