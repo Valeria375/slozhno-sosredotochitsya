@@ -28,3 +28,19 @@
 .page.theme_dark .decorated-text {
   display: flex;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header-color: #db00ff;
+    --shadow-color: #ff0070;
+    --accent-color: #ff0070;
+    --text-color: #f1b2ce;
+    --accent-text: #000028;
+    --content-heading-color: #ff0070;
+    --button-text-color: #ff0070;
+    --button-border-color: #ff0070;
+    --hover-color: #ff007066;
+    --background-color: #000028;
+
+    --background: url(../images/cover-image-dark.png);
+  }
+}
