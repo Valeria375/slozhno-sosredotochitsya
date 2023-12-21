@@ -151,6 +151,7 @@
   /* display: flex; */
   /* flex-wrap: wrap; */
   font-size: inherit;
+  /* inline-size: 315px; */
   color: var(--accent-color);
   /* font-weight: inherit; */
   /* font-family: inherit; */
@@ -173,9 +174,6 @@ color: var(--);
 } */
 .section .section__list {
   grid-template-columns: repeat(3, 1fr);
-}
-.section_header {
-  inline-size: 315px;
 }
 .section_list-header {
   font-size: inherit;
@@ -340,6 +338,4 @@ body {
     grid-row: auto;
   }
 }
-.section_header {
-  inline-size: 355px;
-}
+
