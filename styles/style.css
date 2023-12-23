@@ -254,9 +254,9 @@ body {
   justify-content: center;
   /* margin-block-start: var(--margin-block); */
 }
-.decorated-text::before {
+/* .decorated-text::before {
   content: "";
-}
+} */
 .decorated-text::after {
   content: "";
   box-shadow: 0px 0px 4px 2px currentColor;
