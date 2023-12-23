@@ -41,7 +41,8 @@
     --background-color: #000028;
     --background: url(../images/cover-image-dark.png);
   }
-  .page.theme_dark .decorated-text {
+  .decorated-text {
     display: flex;
   }
+
 }

@@ -32,7 +32,7 @@
 .page.theme_light .decorated-text {
   display: none;
 }
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
 :root {
   --header-color: #ffc2e6;
   --shadow-color: #ff0070;
@@ -51,4 +51,4 @@
 .page.theme_light .decorated-text {
   display: none;
 }
-} */
+}
