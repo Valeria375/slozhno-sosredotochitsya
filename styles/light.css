@@ -23,7 +23,6 @@
   --corner-color: #353430;
   --background-color: #ffeef6;
   --background: url(../images/cover-image-light.png);
-  }
 }
 @media (width < 1024px) {
   .page.theme_light {
@@ -33,7 +32,7 @@
 .page.theme_light .decorated-text {
   display: none;
 }
-
+@media (prefers-color-scheme: light){
 :root {
   --header-color: #ffc2e6;
   --shadow-color: #ff0070;
@@ -48,4 +47,8 @@
   --corner-color: #353430;
   --background-color: #ffeef6;
   --background: url(../images/cover-image-light.png);
+}
+.page.theme_light .decorated-text {
+  display: none;
+}
 }

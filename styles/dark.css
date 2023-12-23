@@ -12,7 +12,6 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-
   --header-color: #db00ff;
   --shadow-color: #ff0070;
   --accent-color: #ff0070;
@@ -25,27 +24,7 @@
   --background-color: #000028;
   --background: url(../images/cover-image-dark.png);
 }
-
 .page.theme_dark .decorated-text {
   display: flex;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --header-color: #db00ff;
-    --shadow-color: #ff0070;
-    --accent-color: #ff0070;
-    --text-color: #f182ce;
-    --accent-text: #000028;
 
-    --button-text-color: #ff0070;
-    --button-border-color: #ff0070;
-    --hover-color: #ff007066;
-    --background-color: #000028;
-
-    --background: url(../images/cover-image-dark.png);
-  }
-  .decorated-text {
-    display: flex;
-  }
-  
-}
